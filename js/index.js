@@ -13,7 +13,8 @@ window.onload = function(){
 		});
 		
 	  
-		
+	  
+	
 	  $(window).on('scroll',function(){
 		let skill = $('#skills').offset().top;	
 		let nowScroll = $(window).scrollTop();
@@ -28,6 +29,7 @@ window.onload = function(){
     
 		function backgroundSet(){
     charts.forEach(chart =>{
+			 
     let percent = parseInt(chart.dataset.percent,10);
     let targetPercent = 5 * frame;
     if(percent >= targetPercent){
