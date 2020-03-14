@@ -46,7 +46,7 @@ window.onload = function(){
        }
     },20);	
 		}else if(nowScroll <= skill || nowScroll >= skillArea){
-			isDoing = false;
+			console.log('skillエリア外');
 		   }
 		else{
 			return;
