@@ -14,12 +14,14 @@ window.onload = function(){
 		
 	  
 	  
-	　let isDoing = false;
+	  　let isDoing = false;
+
 	  $(window).on('scroll',function(){
 		let skill = $('#skills').offset().top;	
+		let skillArea = skill + $('#skills').innerHeight();
 		let nowScroll = $(window).scrollTop();
 		let wh = $(window).height();
-	  if(nowScroll >= skill-wh+(wh/2) && isDoing === false){
+	  if(nowScroll >= skill-wh/2 && isDoing === false){
 		isDoing = true;
 		const charts = document.querySelectorAll('#chart li');
     const frameCount = 22;
@@ -43,8 +45,10 @@ window.onload = function(){
         clearInterval(intervalId);   
        }
     },20);	
-		}else{
-      isDoing = false;
+		}else if(nowScroll <= (skill-wh) || nowScroll >= skillArea){
+			isDoing = false;
+		   }
+		else{
 			return;
 		}
 		});
