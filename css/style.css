@@ -109,7 +109,7 @@ nav ul li a:hover::before {
 	text-align: center;	
 	overflow: hidden;
 	background-image: url(../img/percentages.png);
-	background-position:0,0;
+	background-position-y:0;
 	margin: 40px 15px;
 }
 
