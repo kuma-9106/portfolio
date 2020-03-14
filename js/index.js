@@ -47,6 +47,7 @@ window.onload = function(){
     },20);	
 		}else if(nowScroll <= (skill-wh) || nowScroll >= skillArea){
 			// console.log('skillエリア外');
+			chart.style.backgroundPositionY = '0px';
 			isDoing = false;
 		   }
 		else{
