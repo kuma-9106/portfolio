@@ -21,7 +21,7 @@ window.onload = function(){
 		let skillArea = skill + $('#skills').innerHeight();
 		let nowScroll = $(window).scrollTop();
 		let wh = $(window).height();
-	  if(nowScroll > skill - wh/2 && isDoing === false){
+	  if(nowScroll >= skill - wh/2 && isDoing === false){
 		isDoing = true;
 		const charts = document.querySelectorAll('#chart li');
         const frameCount = 22;
