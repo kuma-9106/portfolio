@@ -14,19 +14,18 @@ window.onload = function(){
 		
 	  
 	  
-	
+	　let isDoing = false;
 	  $(window).on('scroll',function(){
 		let skill = $('#skills').offset().top;	
 		let nowScroll = $(window).scrollTop();
 		let wh = $(window).height();
-	  if(nowScroll >= skill-wh+(wh/2)){
-			
+	  if(nowScroll >= skill-wh+(wh/2) && isDoing === false){
+		isDoing = true;
 		const charts = document.querySelectorAll('#chart li');
     const frameCount = 22;
     let offSetFrame = -100;
     let frame = 0;
-  
-    
+
 		function backgroundSet(){
     charts.forEach(chart =>{
 			 
