@@ -21,18 +21,18 @@ window.onload = function(){
 		let skillArea = skill + $('#skills').innerHeight();
 		let nowScroll = $(window).scrollTop();
 		let wh = $(window).height();
-	  if(nowScroll >= skill-wh/3 && isDoing === false){
+	  if(nowScroll <= skill || nowScroll >= skillArea && isDoing === false){
 		isDoing = true;
 		const charts = document.querySelectorAll('#chart li');
-    const frameCount = 22;
-    let offSetFrame = -100;
-    let frame = 0;
+        const frameCount = 22;
+        let offSetFrame = -100;
+        let frame = 0;
 
 		function backgroundSet(){
     charts.forEach(chart =>{
 			 
-    let percent = parseInt(chart.dataset.percent,10);
-    let targetPercent = 5 * frame;
+        let percent = parseInt(chart.dataset.percent,10);
+        let targetPercent = 5 * frame;
     if(percent >= targetPercent){
      chart.style.backgroundPositionY = `${offSetFrame * frame}px`;
     }
