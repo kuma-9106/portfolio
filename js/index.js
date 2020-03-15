@@ -15,13 +15,13 @@ window.onload = function(){
 	  
 	  
 	  　let isDoing = false;
-	    const charts = document.querySelectorAll('#chart li');
 
 	  $(window).on('scroll',function(){
 		let skill = $('#skills').offset().top;	
 		let skillArea = skill + $('#skills').innerHeight();
 		let nowScroll = $(window).scrollTop();
 		let wh = $(window).height();
+		const charts = document.querySelectorAll('#chart li');
 	  if(nowScroll >= skill - wh/2 && nowScroll <= skillArea - wh/2 && isDoing === false){
 		isDoing = true;
         const frameCount = 22;
