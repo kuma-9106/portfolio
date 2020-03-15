@@ -21,9 +21,9 @@ window.onload = function(){
 		let skillArea = skill + $('#skills').innerHeight();
 		let nowScroll = $(window).scrollTop();
 		let wh = $(window).height();
-		const charts = document.querySelectorAll('#chart li');
-	  if(nowScroll >= skill - wh/2 && nowScroll <= skillArea - wh/2 && isDoing === false){
+		if(nowScroll >= skill - wh/2 && nowScroll <= skillArea - wh/2 && isDoing === false){
 		isDoing = true;
+		const charts = document.querySelectorAll('#chart li');
         const frameCount = 22;
         let offSetFrame = -100;
         let frame = 0;
@@ -47,7 +47,7 @@ window.onload = function(){
     },20);	
 		}else if(nowScroll <= (skill-wh) || nowScroll >= skillArea){
 			// console.log('skillエリア外');
-			charts.style.backgroundPositionY = '0';
+			chart.style.backgroundPositionY = '0';
 			isDoing = false;
 		   }
 		else{
