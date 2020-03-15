@@ -29,14 +29,14 @@ window.onload = function(){
         let frame = 0;
 
 		function backgroundSet(){
-    charts.forEach(chart =>{
+        charts.forEach(chart =>{
 			 
         let percent = parseInt(chart.dataset.percent,10);
         let targetPercent = 5 * frame;
-    if(percent >= targetPercent){
-     chart.style.backgroundPositionY = `${offSetFrame * frame}px`;
-    }
-    });
+     if(percent >= targetPercent){
+     　　chart.style.backgroundPositionY = `${offSetFrame * frame}px`;
+    　}
+    　});
     }
     let intervalId = setInterval(function(){
        backgroundSet();
@@ -47,7 +47,7 @@ window.onload = function(){
     },20);	
 		}else if(nowScroll <= (skill-wh) || nowScroll >= skillArea){
 			// console.log('skillエリア外');
-			chart.style.backgroundPositionY = 0;
+			chart.style.backgroundPositionY = '0';
 			isDoing = false;
 		   }
 		else{
