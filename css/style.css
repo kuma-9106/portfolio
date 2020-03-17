@@ -60,6 +60,15 @@ nav ul li a::before {
 nav ul li a:hover::before {
   transform: scale(1, 1);
 }
+h1{
+	font-size: 30px;
+	text-align: center;
+}
+section{
+	width: 90%;
+	margin: auto;
+	box-sizing: border-box;
+}
 #about{
 	position: relative;
 	text-align: center;
@@ -85,6 +94,8 @@ nav ul li a:hover::before {
 	line-height: 35px;
 	text-align: left;
 	word-break: break-all;
+	animation-name: fadein;
+    animation-duration: 2s;
 }
 .prof_txt span{
 	font-size: 1.3em;
@@ -123,4 +134,16 @@ nav ul li a:hover::before {
 	display: block;
 	margin: auto;
 	margin-top: 10px;
+}
+
+/*introduceテキスト部分fadein*/
+@keyframes fadein{ 
+    from {
+		opacity: 0;
+		transform: translateY(20px);
+	}	
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }

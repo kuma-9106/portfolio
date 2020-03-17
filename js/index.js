@@ -19,7 +19,7 @@ window.onload = function(){
                 let skill = $("#skills");　//skillのエリア
                 let skillTop = skill.offset().top - $(window).scrollTop(); //doc上からskillまでの高さースクロールした領域
 								　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//スクロールしたｘ時点から#skillまでの残りの距離
-                let skillBottom = skillTop + skill.height(); //スクロールしたｘ時点から#skillまでの残りの距離+skillのエリア高さ
+                let skillBottom = skillTop + skill.height(); //skillエリア終点からの距離
 
                 if (skillBottom < windowTop || visibleArea < skillTop) {
                     return "out";　//out判定を返す
