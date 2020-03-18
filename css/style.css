@@ -4,7 +4,7 @@
 	padding: 0;
 }
 body{
-	font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
+	font-family: "monospace";
 	background: #F7D0C9;
 }
 .contents{
@@ -62,22 +62,23 @@ nav ul li a:hover::before {
 }
 h1{
 	font-size: 30px;
+	color: #40211F;
 	text-align: center;
+	font-weight: normal;
 }
-section{
+.innerarea{
 	width: 90%;
-	margin: auto;
+	margin: 30px auto 20px;
 	box-sizing: border-box;
+	margin-top: 30px;
 }
 #about{
 	position: relative;
 	text-align: center;
-	width: 90%;
-	margin: 30px auto;
 	background:url(../img/frofile_img.png),linear-gradient(to bottom,#F7D0C9 140px,#FEEFEA 140px 100%);
   background-repeat: no-repeat;
   background-position: center top;
-	padding: 300px 10px 10px;
+	padding: 300px 17px 10px;
 }
 .name{
 	background: #000;
