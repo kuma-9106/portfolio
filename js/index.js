@@ -22,8 +22,10 @@ window.onload = function(){
                 let skillBottom = skillTop + skill.height(); //skillエリア終点からの距離
 
                 if (skillBottom < windowTop || visibleArea < skillTop) {
+									　//skillエリア終点から下、かつ表示されている領域の高さがskillエリア始点からの距離より小さい(下)の場合
                     return "out";　//out判定を返す
                 } else if (windowTop <= skillTop && skillBottom <= visibleArea) {
+									　//ページTOP(0)がskillエリア始点以下で表示されている領域の高さがskillエリア終点以上
                     return "in";　//in判定を返す
                 }
 
@@ -63,6 +65,7 @@ window.onload = function(){
 
      function animationReset() {
               charts.style.backgroundPositionY = '0px';
+			        /*console.log(charts.length);*/
               isDoing = false;
             }
 
