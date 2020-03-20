@@ -12,25 +12,22 @@ window.onload = function(){
 			return false;
 		});
 		
-	    function getCurrentState() {
-                let windowTop = 0;　　　　　　　　　　　　　　　　//window一番上
-                let visibleArea = $(window).innerHeight(); //表示されている領域の高さ
+    function getCurrentState() {
+      let windowTop = 0;
+      let windowBottom = $(window).innerHeight();
 
-                let skill = $("#skills");　//skillのエリア
-                let skillTop = skill.offset().top - $(window).scrollTop(); //doc上からskillまでの高さースクロールした領域
-								　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//スクロールしたｘ時点から#skillまでの残りの距離
-                let skillBottom = skillTop + skill.height(); //skillエリア終点からの距離
+      let area = $("#skills");
+      let areaTop = area.offset().top - $(window).scrollTop();
+      let areaBottom = areaTop + area.height();
 
-                if (skillBottom < windowTop || visibleArea < skillTop) {
-									　//skillエリア終点から下、かつ表示されている領域の高さがskillエリア始点からの距離より小さい(下)の場合
-                    return "out";　//out判定を返す
-                } else if (windowTop <= skillTop && skillBottom <= visibleArea) {
-									　//ページTOP(0)がskillエリア始点以下で表示されている領域の高さがskillエリア終点以上
-                    return "in";　//in判定を返す
-                }
+      if (areaBottom < windowTop || windowBottom < areaTop) {
+          return "out";
+      } else if (windowTop <= areaTop && areaBottom <= windowBottom) {
+          return "in";
+      }
 
-                return "intersect";　//intersect判定を返す
-              }
+      return "intersect";
+  }
               
      let prevStatus = "out";      
      let isDoing = false;
