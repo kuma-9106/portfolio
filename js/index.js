@@ -78,10 +78,17 @@ window.onload = function(){
             }
 
      function animationReset() {
+<<<<<<< HEAD
               charts.forEach(chart =>{
 
                 chart.style.backgroundPositionY = '0px';
               })
+=======
+	    　charts.forEach(chart => {
+	      chart.style.backgroundPositionY = '0px';
+	     });
+        
+>>>>>>> 5d196de94eaa497ac82288dae02bb64b6238e118
 			        /*console.log(charts.length);*/
               isDoing = false;
             }
