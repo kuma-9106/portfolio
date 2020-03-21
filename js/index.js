@@ -10,8 +10,25 @@ window.onload = function(){
 			let position = target.offset().top;
 			$('body,html').animate({scrollTop:position},500,'swing');
 			return false;
-		});
-		
+    });
+    
+    const aboutarea = $('#about').offset().top;
+    $('.prof_txt').css({
+     opacity : 0,
+     transform : 'translateY(50px)',
+     transition :  '800ms'
+    });
+		$(window).on('scroll load', function(){
+     let scroll_top = $(this).scrollTop();
+     if(scroll_top > aboutarea){
+      $('.prof_txt').css({
+        opacity : 1,
+        transform : 'translateY(0)'
+      }); 
+     }
+    });
+
+
     function getCurrentState() {
       let windowTop = 0;
       let windowBottom = $(window).innerHeight();
@@ -68,7 +85,7 @@ window.onload = function(){
 			        /*console.log(charts.length);*/
               isDoing = false;
             }
-
+              
       $(function() {
                 $(document).on("scroll", function() {
                     let status = getCurrentState();
