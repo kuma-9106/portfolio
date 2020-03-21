@@ -61,7 +61,10 @@ window.onload = function(){
             }
 
      function animationReset() {
-              charts.style.backgroundPositionY = '0px';
+              charts.forEach(chart =>{
+
+                chart.style.backgroundPositionY = '0px';
+              })
 			        /*console.log(charts.length);*/
               isDoing = false;
             }
