@@ -12,6 +12,15 @@ window.onload = function(){
 			return false;
     });
     
+    $('#top').hide();
+    $(window).on('scroll', function(){
+      if($(this).scrollTop() > 300){
+        $('#top').fadeIn();
+      }else{
+        $('#top').fadeOut();
+      }
+    });
+
     const aboutarea = $('#about').offset().top;
     $('.prof_txt').css({
      opacity : 0,
@@ -78,17 +87,10 @@ window.onload = function(){
             }
 
      function animationReset() {
-<<<<<<< HEAD
-              charts.forEach(chart =>{
-
-                chart.style.backgroundPositionY = '0px';
-              })
-=======
 	    　charts.forEach(chart => {
 	      chart.style.backgroundPositionY = '0px';
 	     });
         
->>>>>>> 5d196de94eaa497ac82288dae02bb64b6238e118
 			        /*console.log(charts.length);*/
               isDoing = false;
             }
