@@ -98,6 +98,9 @@ h1{
 	animation-name: fadein;
 	animation-duration: 2s;
 	margin-top: 20px;
+	opacity: 0;
+    transform: translateY(50px);
+    transition: 800ms;
 }
 .prof_txt span{
 	font-size: 1.3em;
