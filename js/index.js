@@ -23,7 +23,7 @@ $(function() {
     const aboutarea = $('#about').offset().top;
     $(window).on('scroll', function() {
         let scroll_top = $(this).scrollTop();
-        if (scroll_top > aboutarea) {
+        if (scroll_top > aboutarea-50) {
             $('.prof_txt').css({
                 opacity: 1,
                 transform: 'translateY(0)'
