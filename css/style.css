@@ -138,22 +138,22 @@ h1{
 	margin: auto;
 	margin-top: 8px;
 }
-#chart > li dw{
+#chart > li .dw{
 	color: aquamarine;
 }
-#chart > li ps{
+#chart > li .ps{
 	color: rgb(127, 182, 255);
 }
-#chart > li ai{
+#chart > li .ai{
 	color: rgb(255, 127, 127);
 }
-#chart > li html{
+#chart > li .html{
 	color: rgb(208, 127, 255);
 }
-#chart > li css{
+#chart > li .css{
 	color: rgb(127, 146, 255);
 }
-#chart > li js{
+#chart > li .js{
 	color: rgb(255, 221, 127);
 }
 #works ul{
