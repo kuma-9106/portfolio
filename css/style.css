@@ -129,7 +129,6 @@ h1{
 	user-select: none;
 }
 .ttl{
-	color: aquamarine;
 	line-height: 84px;
 	background: #fff;
 	height: 84px;
@@ -138,6 +137,24 @@ h1{
 	display: block;
 	margin: auto;
 	margin-top: 8px;
+}
+#chart > li dw{
+	color: aquamarine;
+}
+#chart > li ps{
+	color: rgb(127, 182, 255);
+}
+#chart > li ai{
+	color: rgb(255, 127, 127);
+}
+#chart > li html{
+	color: rgb(208, 127, 255);
+}
+#chart > li css{
+	color: rgb(127, 146, 255);
+}
+#chart > li js{
+	color: rgb(255, 221, 127);
 }
 #works ul{
 	display: flex;
