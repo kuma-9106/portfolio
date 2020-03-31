@@ -1,11 +1,26 @@
 <?php
 
-class Robot{
-    private $name = '';
-    function setName($name){
-        $this->name = (string).filter_var($name);
-    }
-}
+// class Robot{
+//     private $name = '';
+    
+//     public function __construct($name){
+//         $this->setName($name);
+//     }
+//     public function setName($name){
+//         $this->name = (string)filter_var($name);
+//     }
+//     public function getName(){
+//         return $this->name;
+//     }
+// }
 
-$a = new Robot;
-$a->name = 'sakuma';
+
+
+// $a = new Robot('佐久間');
+// echo $a->getName();
+
+class stdClass { }
+ 
+ $a = new stdClass;
+ $a->name = '佐久間';
+ echo $a->name;
