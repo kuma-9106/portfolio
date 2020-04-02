@@ -16,10 +16,10 @@
 
 
 
-// $a = new Robot('佐久間');
+// $a = new Robot('さくま');
 // echo $a->getName();
 
-class stdClass { }
+// class stdClass { }
  
  $a = new stdClass;
  $a->name = '佐久間';
