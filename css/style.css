@@ -67,6 +67,7 @@ h1{
 	font-size: 35px;
 	letter-spacing: 8px;
 	color: #40211F;
+	user-select: none;
 	text-align: center;
 	font-weight: normal;
 }
