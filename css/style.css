@@ -219,6 +219,21 @@ h1{
     color: #fff;
     user-select:none;
 }
+#contact ul li img {
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
+}
+#contact ul li img:hover{
+	-webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 
 /* タブレット：760px～960px */
 @media only screen and (min-width: 760px) {
@@ -242,7 +257,7 @@ h1{
 	right: 20%;
 	z-index: 1;
 }	
-	
+
 }/* タブレット */
 
 /* PC：961px～ */
