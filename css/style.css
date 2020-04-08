@@ -214,6 +214,10 @@ h1{
 	bottom: 15px;
 	right: 15px;
 	border-radius: 25px;
+	transition: 1.0s ;
+}
+#top:hover{
+	color: rgb(252, 129, 129);
 }
 #top a{
     color: #fff;
