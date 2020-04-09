@@ -217,7 +217,7 @@ h1{
 	transition: 1.0s ;
 }
 #top:hover{
-	color: rgb(252, 129, 129);
+	background-color: rgb(235, 109, 109);
 }
 #top a{
     color: #fff;
