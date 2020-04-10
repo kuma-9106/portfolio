@@ -123,10 +123,10 @@ h1{
 }
 #chart > li{
 	list-style: none;
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	background-color: #D7D7D7;
-	border-radius: 50px;
+	border-radius: 75px;
 	text-align: center;	
 	overflow: hidden;
 	background-image: url(../img/percentages.png);
@@ -135,11 +135,11 @@ h1{
 	user-select: none;
 }
 .ttl{
-	line-height: 84px;
+	line-height: 134px;
 	background: #fff;
-	height: 84px;
-	width: 84px;
-	border-radius: 42px;
+	height: 134px;
+	width: 134px;
+	border-radius: 67px;
 	display: block;
 	margin: auto;
 	margin-top: 8px;

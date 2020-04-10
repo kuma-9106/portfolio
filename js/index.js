@@ -78,7 +78,7 @@ function animationStart() {
         return;
     }
     const frameCount = 22;
-    let offSetFrame = -100;
+    let offSetFrame = -150;
     let frame = 0;
 
     function backgroundSet() {
