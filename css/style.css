@@ -143,6 +143,7 @@ h1{
 	display: block;
 	margin: auto;
 	margin-top: 8px;
+	font-size: 18px;
 }
 #chart > li .dw{
 	color: aquamarine;
