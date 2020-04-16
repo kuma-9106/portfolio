@@ -47,10 +47,6 @@ nav ul li a {
 	position: relative;
     text-decoration: none;
 	color: #000;
-	opacity: 0.7;
-}
-nav ul li a.nowLoc{
-	opacity: 1;
 }
 nav ul li a::before {
 	position: absolute;		
