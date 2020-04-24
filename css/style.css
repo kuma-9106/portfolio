@@ -92,7 +92,7 @@ h1{
 	color: #fff;
 	display: inline-block;
     padding: 10px 60px;
-	line-height: 12px;
+	line-height: 15px;
 	font-size: 13px;
     line-height: 16px;
 }
@@ -207,7 +207,6 @@ h1{
 	cursor: pointer;
 	width: 50px;
 	height: 50px;
-	line-height: 50px;
 	text-align: center;
 	position: fixed;
 	bottom: 15px;
@@ -221,6 +220,9 @@ h1{
 #top a{
     color: #fff;
     user-select:none;
+}
+#top img{
+	vertical-align: middle;
 }
 #contact ul li img {
     -moz-transition: -moz-transform 0.5s linear;
