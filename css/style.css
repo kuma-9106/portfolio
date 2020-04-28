@@ -171,6 +171,9 @@ h1{
 	width: 300px;
 	margin: 20px 10px;
 }
+#works ul li p{
+    line-height: 25px;
+}
 #works ul li img{
 	background-color: #fff;
 	width: 300px;
