@@ -179,7 +179,7 @@ h1{
 	transition: 1.0s;
 }
 #works ul li p a:hover{
-	opacity: 0.5;
+	opacity: 0.3;
 }
 #works ul li img{
 	background-color: #fff;
