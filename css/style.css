@@ -176,7 +176,7 @@ h1{
     line-height: 25px;
 }
 #works ul li p a{
-	transition: 1.0s;
+	transition: 0.8s;
 }
 #works ul li p a:hover{
 	opacity: 0.3;
