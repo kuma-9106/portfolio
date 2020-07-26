@@ -66,7 +66,7 @@ nav ul li a:hover::before {
 	transform: scale(1, 1);
   }
 h1{
-	font-family: 'Lato', sans-serif;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 	font-size: 35px;
 	letter-spacing: 8px;
 	color: #40211F;
@@ -84,7 +84,7 @@ h1{
 	position: relative;
 	text-align: center;
 	margin: 50px auto;
-	background:url(../img/frofile_img.png),linear-gradient(to bottom,#F7D0C9 140px,#FEEFEA 140px 100%);
+	background:url(../img/profile_img.png),linear-gradient(to bottom,#F7D0C9 140px,#FEEFEA 140px 100%);
 	background-position: center top;
 	padding: 285px 17px 20px;
 	background-repeat: no-repeat;
@@ -147,7 +147,7 @@ h1{
 	font-size: 18px;
 }
 #chart > li .dw{
-	color: aquamarine;
+	color: rgb(96, 225, 117);
 }
 #chart > li .ps{
 	color: rgb(127, 182, 255);
@@ -162,7 +162,10 @@ h1{
 	color: rgb(127, 146, 255);
 }
 #chart > li .js{
-	color: rgb(255, 221, 127);
+	color: rgb(240, 194, 35);
+}
+#chart > li .php{
+	color: rgb(119, 123, 177);
 }
 #works ul{
 	display: flex;
@@ -282,5 +285,11 @@ h1{
 
 /* PC：961px～ */
 @media only screen and (min-width: 961px){
-	
+.prof_txt{
+	width: 80%;
+	margin: auto;
+	letter-spacing: 1px;
+	padding: 20px 0 30px;
+	text-align: center;
+}
 }/* PC：961px～ */
