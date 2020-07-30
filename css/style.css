@@ -256,6 +256,12 @@ h1{
     transform: scale(1.2);
 }
 
+/* 500px以下 */
+@media only screen and (min-width: 5000px) {
+.mv{
+   background-attachment: unset;	
+}
+}
 
 /* タブレット：760px～960px */
 @media only screen and (min-width: 760px) {
