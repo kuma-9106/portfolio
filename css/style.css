@@ -258,6 +258,9 @@ h1{
 .indent-adjust{
 	padding-left: 125px;
 }
+.emph{
+	font-weight: bold;
+}
 
 /* 500px以下 */
 @media only screen and (max-width: 500px) {
